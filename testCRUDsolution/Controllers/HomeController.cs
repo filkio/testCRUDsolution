@@ -13,13 +13,9 @@ namespace testCRUDsolution.Controllers
     {
         public ViewResult Index()
         {
-            return View();
-        }
-
-        public ViewResult EmployeeTable()
-        {
             return View(Repository.GetEmployeesFromDb());
         }
+
 
         [HttpGet]
         public ViewResult EmployeeAdd()
@@ -32,7 +28,7 @@ namespace testCRUDsolution.Controllers
             if (ModelState.IsValid)
             {
                 Repository.AddEmployee(employee);
-                return View("Index");
+                return View("CorrectForm");
             }
             else
             {

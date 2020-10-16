@@ -12,19 +12,19 @@
         <div asp-validation-summary="All"></div>
         <div>
             <label asp-for="FullName">ФИО:</label>
-            <input asp-for="FullName" placeholder="ФИО"/>
+            <input asp-for="FullName" placeholder="ФИО" />
         </div>
         <div>
             <label asp-for="Position">Должность:</label>
-            <input asp-for="Position" placeholder="Должность"/>
+            <input asp-for="Position" placeholder="Должность" />
         </div>
         <div>
             <label asp-for="DateOfBirth">Дата рождения:</label>
-            <input type="datetime-local" asp-for="DateOfBirth" placeholder="Дата рождения"/>
+            <input type="datetime-local" asp-for="DateOfBirth" placeholder="Дата рождения" />
         </div>
         <div>
             <label asp-for="Text">Текст:</label>
-            <input asp-for="Text" placeholder="Текст"/>
+            <input asp-for="Text" placeholder="Текст" />
         </div>
         <div>
             <label>Декрет?</label>
@@ -39,5 +39,6 @@
 
 
     </form>
+    <a asp-action="Index" class="btn-dark text-decoration-none">Назад к таблице</a>
 </body>
 </html>

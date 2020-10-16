@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace testCRUDsolution.Views.Home
 {
-    public class EmployeeTableModel : PageModel
+    public class CorrectFormModel : PageModel
     {
         public void OnGet()
         {
