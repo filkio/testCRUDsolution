@@ -7,14 +7,6 @@ namespace testCRUDsolution.Models
 {
     public static class Repository
     {
-        private static List<Employee> employees = new List<Employee>();
-        public static IEnumerable<Employee> GetEmployees
-        {
-            get 
-            { 
-                return employees;
-            }
-        }
         public static void AddEmployee(Employee employee)
         {
             using (EmployeeDbContext context = new EmployeeDbContext())
