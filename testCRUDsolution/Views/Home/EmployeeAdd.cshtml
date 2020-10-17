@@ -6,35 +6,37 @@
 <html>
 <head>
     <title>Добавление</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
 </head>
 <body>
     <form asp-action="EmployeeAdd" method="post">
         <div asp-validation-summary="All"></div>
         <div>
             <label asp-for="FullName">ФИО:</label>
-            <input asp-for="FullName" placeholder="ФИО" />
+            <input class="form-control" asp-for="FullName" placeholder="ФИО" />
         </div>
         <div>
             <label asp-for="Position">Должность:</label>
-            <input asp-for="Position" placeholder="Должность" />
+            <input class="form-control" asp-for="Position" placeholder="Должность" />
         </div>
         <div>
             <label asp-for="DateOfBirth">Дата рождения:</label>
-            <input type="datetime-local" asp-for="DateOfBirth" placeholder="Дата рождения" />
+            <input class="form-control" type="datetime-local" asp-for="DateOfBirth" placeholder="Дата рождения" />
         </div>
         <div>
             <label asp-for="Text">Текст:</label>
-            <input asp-for="Text" placeholder="Текст" />
+            <input class="form-control" asp-for="Text" placeholder="Текст" />
         </div>
         <div>
             <label>Декрет?</label>
-            <select asp-for="Decree">
+            <select class="form-control" asp-for="Decree">
                 <option value="true">Да</option>
                 <option value="false">Нет</option>
             </select>
         </div>
         <div>
-            <button type="submit">Добавить</button>
+            <button class="btn btn-primary" type="submit">Добавить</button>
         </div>
 
 
